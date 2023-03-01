@@ -1,0 +1,68 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Dayana B</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body class="inicio">
+  <header>
+    <nav class="fondo_inicio">
+      <ul class="menu">
+        <li class="logo">
+          <img src="img/logoportfolio.png" alt="imagen logo" height="60px" />
+        </li>
+        <li class="item"><a class="active" href="index.html">Inicio</a></li>
+        <li class="item">
+          <a href="pages/sobre_mi.html">Sobre mí</a>
+        </li>
+        <li class="item"><a href="pages/habilidades.html">Habilidades</a></li>
+        <li class="item"><a href="pages/proyectos.html">Proyectos</a></li>
+        <li class="item"><a href="pages/contacto.html">Contacto</a></li>
+        <li class="toggle">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1 class="presentacion">Hola, mi nombre es Dayana Bernal.<br> Soy una desarrolladora web full-stack
+      </h1>
+      <div class="redes">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </section>
+  </main>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBpyabbJgUoG_o6XxalIOdVPnWqIdWqVOc",
+      authDomain: "dayanabportfolio.firebaseapp.com",
+      projectId: "dayanabportfolio",
+      storageBucket: "dayanabportfolio.appspot.com",
+      messagingSenderId: "203196616918",
+      appId: "1:203196616918:web:477158929cb8e67dc17977",
+      measurementId: "G-JLNRFW3F58"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
+</html>
